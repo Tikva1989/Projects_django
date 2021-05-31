@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title%}
+Family - {{ family.name }}
+{% endblock %}
+
+{% block content %}
+<h1>hello from single family</h1>
+
+<ul>
+    <li>name: {{ family.name }}</li>
+    {% for animal in animals%}
+        <p>{{animal.name}} is part of the family</p>
+        <a href="{% url 'single_animal' animal.id %}"> See animal</a>
+    {% endfor %}
+</ul>
+
+{% endblock %}
