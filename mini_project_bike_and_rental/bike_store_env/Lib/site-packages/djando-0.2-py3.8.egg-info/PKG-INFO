@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: djando
+Version: 0.2
+Summary: Using Docker with Django made easy
+Home-page: http://github.com/rayronvictor/djando
+Author: Rayron Victor
+Author-email: rayronvictor@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

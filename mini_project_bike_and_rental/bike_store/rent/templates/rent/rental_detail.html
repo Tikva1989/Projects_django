@@ -1,0 +1,15 @@
+{% extends 'rent/base.html' %}
+
+{% block content %}
+<h3>Rental ID{{ object.id }}</h3>
+<ul >
+    <li>Customer details: {{objects.customer.id}}</li>
+    <li>vehicle details: {{object.vehicle_id}}</li>
+    {% if objct.return_date != Null%}
+        <li>Rental details: return on {{object.return_date}}</li>
+    {%else%}
+        <li>Rental details: Not yet returned</li>
+    {%endif%}
+</ul>
+
+{% endblock %}

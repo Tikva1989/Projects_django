@@ -1,0 +1,13 @@
+{% extends 'rent/base.html' %}
+
+{% block content %}
+    <ul style='list-style-type: none'>
+        {% for vehicle in object_list %}
+            <li>Vehicle Type: {{ vehicle.vehicle_type}}</li>
+            <li> Real cost:  {{ vehicle.real_cost}} </li>
+            <li> Size: {{vehicle.size}} </li> 
+         
+        {% endfor %}
+    </ul>
+
+{% endblock %}

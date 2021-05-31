@@ -1,0 +1,13 @@
+{% extends 'rent/base.html' %}
+
+{% block content %}
+    <ul style='list-style-type: none'>
+        {% for rental in object_list %}
+            <li>Rental_ID: {{rental.id}}</li>
+            <li>Return Date:  {{ rental.return_date}} </li>
+            <li> Customer_ID: {{rental.customer_id}} </li> 
+            <li>Rental Date: {{ rental.rental_date}} </li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'rent/base.html' %}
+
+
+{% block content %}
+    <ul>
+        <li>first_name:  {{ object.first_name}}</li>
+        <li>last_name:  {{ object.last_name}}</li>
+        <li>Phone Nember:  {{ object.phone_number }}</li>
+        <li>Email:  {{ object.email }}</li>
+        <li>Address:  {{ object.address }}</li>
+        <li>City:  {{ object.city }}</li>
+        <li>Country:  {{ object.country }}</li>
+
+    </ul>
+{% endblock%}
