@@ -1,0 +1,22 @@
+
+{% extends 'gifs/base.html' %}
+
+{% block title%}
+All Categories
+{% endblock %}
+
+{% block content %}
+    <h1>All Categories</h1>
+    
+
+  {% for cat in all_categories %}
+    
+    <ul>
+    
+        <li> <a href="{% url 'single_category' cat.id %}">View category {{cat.name}}</a></li>
+       
+     
+    </ul>
+    <hr>
+    {% endfor %}
+{% endblock %}

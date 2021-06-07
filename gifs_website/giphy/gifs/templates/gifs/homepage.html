@@ -1,0 +1,15 @@
+{% extends 'gifs/base.html' %}
+
+{% block content %}
+<h1>Gifs</h1>
+<ul style='list-style-type: none'>
+    {% for gif in gifs%}
+    <p>{{ gif.title}}</p>
+    <img src="{{ gif.url }}"alt="{{ gif.title }}" width='354' height="208.235294">
+    <hr>
+    {% endfor %}
+</ul>
+
+{% endblock %}
+    
+
