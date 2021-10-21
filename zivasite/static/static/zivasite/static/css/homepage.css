@@ -1,0 +1,80 @@
+:root {
+    --mainColor: #e9f5d3 ;
+    --secondaryColor: #f1dfdb;
+
+    --mainText: #0a0a0a;
+    --secondaryText: #0a0a0a;
+}
+
+body, html{
+    padding: 0;
+    margin: 0;
+    background-color: var(--mainColor);
+}
+
+#main{
+    overflow: clip;
+}
+
+h1, h2, h3, h4, h5, h6, strong{
+    color: black;
+    font-family: 'Amatic SC', cursive;
+}
+
+p, li, label, input, textarea{
+        color: black;
+}
+
+.s2 {
+    background-color: var(--secondaryColor);
+    }
+
+.s3{
+    background-color:var(--mainColor);
+
+}
+
+.main-container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.intro-wrapper{
+    display: grid;
+    justify-items:center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        'title title'
+        'text img'
+    ;
+
+}
+.title{
+    grid-area: title;
+
+
+}
+
+.img{
+    grid-area: img;
+    place-self: center;
+
+}
+
+.text{
+    grid-area: text;
+    place-self: center;
+}
+
+
+#homepage-bg {
+    background-position: center center;
+    background-size: auto 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 15em 0;
+    margin: auto 0;
+    width: 125%;
+    opacity: 90%;
+}
+

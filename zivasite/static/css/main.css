@@ -1,0 +1,50 @@
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+}
+
+
+/*---------------------------------   footer    ----------------------------*/
+
+#main-footer {
+    background-color:#004c56;
+    color: white;
+    display: block;
+
+}
+.wrapper-element div{
+    display: block;
+    margin: auto;
+}
+ul li .fa-icons-list {
+    list-style: none;
+    display: inline-flex;
+    margin-right: 5em;
+}
+
+.follow{
+
+}
+.fa {
+   padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.fa:hover {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: var(--bs-light: #f8f9fa);
+;
+}
+
+/*___________________________________________________________________________*/
+
