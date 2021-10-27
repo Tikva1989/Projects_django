@@ -119,7 +119,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-# .env
+# environments.env
 .env/
 .venv/
 env/
@@ -209,7 +209,7 @@ Thumbs.db
 # SageMath parsed files
 
 # Environments
-# .env
+# environments.env
 
 # Spyder project settings
 
