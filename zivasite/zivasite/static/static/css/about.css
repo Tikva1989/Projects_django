@@ -1,0 +1,35 @@
+body, html{
+    padding: 0;
+    margin: 0;
+    background-color: var(--mainColor);
+}
+
+.about-container{
+
+}
+
+#main{
+    overflow: clip;
+}
+
+
+.about-wrapper{
+    display: grid;
+    justify-items:center;
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto;
+    grid-template-areas:
+        'form-contact'
+        'about-zive'
+    ;
+
+}
+.form-contact{
+    grid-area: form-contact;
+    align-self: center;
+}
+
+.about-ziva{
+    grid-area: about-ziva ;
+    place-self: center stretch;
+}
