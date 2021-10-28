@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
-# import django_heroku
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -28,7 +27,7 @@ SECRET_KEY = 'SECRET_KEY'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["https://ziva-site-nlp.herokuapp.com/", '0.0.0.0', 'localhost']
+ALLOWED_HOSTS = ["https://ziva-site-nlp.herokuapp.com/", '0.0.0.0', '127.0.0.1']
 
 
 # Application definition
@@ -125,11 +124,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [str(BASE_DIR / 'static')]
-STATIC_ROOT = str(BASE_DIR / 'static')
+STATIC_ROOT = str(BASE_DIR / 'staticfiles')
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
-# django_heroku.settings(locals())
