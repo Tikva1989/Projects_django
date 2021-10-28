@@ -129,6 +129,7 @@ env.bak/
 venv.bak/
 pythonenv*
 house_venv
+environments.env
 
 # Spyder project settings
 .spyderproject
@@ -209,7 +210,7 @@ Thumbs.db
 # SageMath parsed files
 
 # Environments
-# environments.env
+ environments.env
 
 # Spyder project settings
 
