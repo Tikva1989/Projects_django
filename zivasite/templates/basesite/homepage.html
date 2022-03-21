@@ -2,22 +2,23 @@
 {% load static%}
 
 {% block content %}
-<section class="s1">
+<div class="d-flex flex-column">
+<section class="s1 p-2">
     <div id="homepage-bg" style="background-image: url('{% static 'images/max-van-den-oetelaar-buymYm3RQ3U-unsplash.jpg' %}')"; >
     </div>
 </section>
 
-<section class="s2">
+<section class="s2 p-2">
     <div class="main-container">
         <div class="intro-wrapper">
             <div class="title">
                 <h1 style="color: black; ">מה זה NLP?</h1>
 
             </div>
-            <div class="img p-2 align-self-center">
+            <div class="img p-1 align-self-center">
                 <img src="{% static 'images/jesse-orrico-rmWtVQN5RzU-unsplash.jpg' %}"  width="100%" height="auto" alt="unsplash">
             </div>
-            <div class="text float-right p-3">
+            <div class="text float-right p-2">
                 <p>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית. סת אלמנקום ניסי נון ניבאה. דס איאקוליס וולופטה דיאם. וסטיבולום אט דולור, קראס אגת לקטוס וואל אאוגו וסטיבולום סוליסי טידום בעליק. קונדימנטום קורוס בליקרה, נונסטי קלובר בריקנה סטום, לפריקך תצטריק לרטי.
 
 קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.
@@ -31,8 +32,10 @@
         </div>
     </div>
 </section>
-<section class="s3">
-    <div>
+
+<section class="s3 p-2 mt-2">
+
+    <div class="p-2 ">
         <h2 class="text-center" style="color:black;">רוצה קובץ עם משפטי עידוד יומיומיים להדפסה?</h2>
         <div id="form-wrapper">
             <form action="{% url 'thanks' %}" method="post" style="padding-right: 30%;">
@@ -43,7 +46,7 @@
         </div>
     </div>
 </section>
-
+</div>
 
 {% endblock %}
 

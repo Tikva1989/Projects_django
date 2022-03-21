@@ -42,7 +42,7 @@ p, li, span,label, input, textarea{
     display: grid;
     justify-items:center;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 25% auto;
+    grid-template-rows: 10% auto;
     grid-template-areas:
         'title title'
         'text img'

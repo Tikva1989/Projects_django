@@ -1,0 +1,10 @@
+.card {
+    background-color: black;
+}
+.card-columns {
+      display: flex;
+  }
+
+.card {
+    style: width: 18rem;
+  }

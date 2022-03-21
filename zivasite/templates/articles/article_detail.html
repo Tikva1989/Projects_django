@@ -1,0 +1,43 @@
+{% extends 'base.html'%}
+{% load static%}
+
+{% block content %}
+
+<div class="article-detail">  
+    <h1>{{ article.title }}</h1>
+    <small>
+        {{ article.created_on.date }} |&nbsp;
+        קטגוריות:&nbsp;
+            {% for category in article.categories.all %}
+            <a href="{% url 'article_category' category.name %}">
+                {{category.name }}
+            </a>
+            {% endfor %}
+    </small>
+    <p>{{ article.body | linebreaks }}</p>
+</div>
+<div class="comment-form">
+    <h3>להשאיר תגובה :</h3>
+    <form action="/article/{{ article.pk }}/" method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            {{ form.author }}
+        </div>
+        <div class="form-group">
+            {{ form.body }}
+        </div>
+        <button type="submit" class="btn btn-primary">לפרסם</button>
+    </form>
+    <h3>תגובות:</h3> 
+    {% for comment in comments %}
+    <p>
+        בתאריך: {{comment.created_on.date }}&nbsp;
+       מאת: <b>{{ comment.author }}</b> 
+       </p>
+    <p>{{ comment.body }}</p>
+    <hr>
+    {% endfor %}
+</div>
+{% endblock %}
+
+   

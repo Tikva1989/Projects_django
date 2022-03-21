@@ -1,0 +1,27 @@
+{% extends 'base.html'%}
+{% load static%}
+
+{% block content %}
+<h1>{{ category | title }}</h1>
+{% for article in articles %}
+
+<div class="card-deck">
+    <div class="card">
+      <img class="card-img-top" src="..." alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title text-center"><a href="{% url 'article_detail' article.pk%}">{{ article.title }}</a></h5>
+        <p class="card-text">{{ article.body | slice:":200" }}<a href="{% url 'article_detail' article.pk%}">...</a></p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">  קטגוריה:
+            {% for category in article.categories.all %}
+            <a href="{% url 'article_category' category.name %}">
+                {{category.name }}
+            </a>
+            {% endfor %} | {{article.last_modified.date }}</small>
+      </div>
+    </div>
+    {% endfor %}
+
+</div>
+{% endblock %}

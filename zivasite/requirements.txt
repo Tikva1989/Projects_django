@@ -17,7 +17,7 @@ distro==1.4.0
 Django==3.2.7
 django-require==1.0.11
 django-storages==1.12.2
-filelock==3.0.12
+filelock==3.0.12d
 fontawesome-free==5.15.4
 future==0.18.2
 gunicorn==20.1.0
@@ -43,3 +43,4 @@ wadllib==1.3.3
 waitress==2.0.0
 webencodings==0.5.1
 whitenoise==5.3.0
+

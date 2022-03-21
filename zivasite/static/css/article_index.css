@@ -1,0 +1,5 @@
+
+.card-deck {
+    display: flex;
+    gap: 10px;
+  }
